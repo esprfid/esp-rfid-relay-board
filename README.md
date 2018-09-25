@@ -1,6 +1,6 @@
 # ESP-RFID Relay Board
 
-This project is follow up for "ESP-RFID Board" but with few more options and
+This project is follow up for "ESP-RFID Board" but with few more options.
 
 <img src="https://raw.githubusercontent.com/esprfid/esp-rfid-relay-board/master/images/ESP-RFID-Relay-Board.jpg" width="400" />&nbsp;&nbsp;
 
