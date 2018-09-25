@@ -5,7 +5,7 @@ This project is follow up for "ESP-RFID Board" but with few more options and
 <img src="https://raw.githubusercontent.com/esprfid/esp-rfid-relay-board/master/images/ESP-RFID-Relay-Board.jpg" width="400" />&nbsp;&nbsp;
 
 ## What is ESP-RFID Relay Board?
-ESP-RFID Relay Board is tiny ESP12 module (ESP8266) board, designed with wiegand RFID readers in mind.
+ESP-RFID Relay Board is tiny ESP12 module (ESP8266) board, designed with wiegand RFID readers in mind and [ESP-RFID Firmware](https://github.com/esprfid/esp-rfid)
 
 * Small size factor, sometimes possible to glue it into existing readers.
 * Single power source to power 12V/2A powers ESP12 module, RFID Wiegand Reader and magnetic lock for opening doors.
