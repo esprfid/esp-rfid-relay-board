@@ -34,7 +34,7 @@ Same as for any other ESP8266 programmer where you need to put EPS8266 into a sp
 The reason for 9 pins is to cover the most complex wiegand reader i could fins on the market. Mostly they only have 5 or 6 wires but sometimes, they also have 9 wire versions.
 
 **PIN NAME**|**CONNECTION**|**DESCRIPTION**
-:-----:|:-----:|:-----:
+:-----|:-----|:-----
 DO|GPIO4|Wiegand data line D0 (*)
 D1|GPIO5|Wiegand data line D1. (*)
 WG|GPIO0|Some readers have WG line which if HIGH/LOW can change Wiegand stream bits. Usually not very important!
@@ -48,7 +48,7 @@ F1|To BTN/IN terminal right pole or to GPIO14 (**)|
 ## Screw Terminals On the bottom of ESP-RFID Relay Board
 
 **TERMINAL NAME**|**DESCRIPTION**
-:-----:|:-----:
+:-----|:-----
 RPOW|In case RELAY-POWER pad is connected, when relay connects the circuit, this terminal provides input voltage directly on it’s poles. So the door magnet lock can be powered directly through this terminal.
 RSW|Since i used small signal relay, it had two sides so another side is also connecting at the same time when relay makes connection but it only cus circuit. So practical use for this terminal can be to power magnetic lock with external source and even AC so that you get buzzing sound when the lock opens and avoid jamming of the lock. (*)
 POWER 8V-12V|This is the main power source and in some settings only power source that you need. Please provide minimum 2A if you also power magnetic lock and Wiegand RFID Reader from same source, through ESP-RFID Relay Board
@@ -59,7 +59,7 @@ BTN/IN|Depending on P1 and P2 Pads connection, it can have different purposes.Ch
 ## Configuration pads P1, P2, P3, RELAY-POWER, 5V/3V3
 
 **PAD NAME**|**DESCRIPTION**
-:-----:|:-----:
+:-----|:-----
 P1|"Options: Connected poles 3 and 2 redirects F1 on  RFID Reader Terminal to BTN/IN right pole. Connected poles 3 and 1 and you will get **GPIO14** to be connected on left BTN/IN terminal, grounded with 10k resistor. Connected poles 2 and 1 and you will power pin F1 on RFID Reader terminal with GPIO14 (*)"
 P2|"Options: Connected poles 3 and 2 redirects F2 on  RFID Reader Terminal to BTN/IN left pole. Connected poles 3 and 1 and you will get 3V3 on left pin of BTN/IN terminal. Connected poles 2 and 1 and you will power pin F2 on RFID Reader terminal with 3V3 (*)"
 P3|"Options: Connected poles 1 and 2 redirects BUZ pin on RFID Reader Terminal and **GPIO12**. Connected poles 2 and 3 redirects BUZ pin on RFID Reader terminal and GPIO12 through 10K resistor." "RELAY- POWER"
