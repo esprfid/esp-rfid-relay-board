@@ -47,10 +47,13 @@ F1|To BTN/IN terminal right pole or to GPIO14 (**)|
 
 ## Screw Terminals On the bottom of ESP-RFID Relay Board
 
-**TERMINAL NAME**|**DESCRIPTION**|**DESCRIPTION**
-:-----:|:-----:|:-----:
-RPOW|In case RELAY-POWER pad is connected, when relay connects the circuit, this terminal provides input voltage directly on it’s poles. So the door magnet lock can be powered directly through this terminal.|Wiegand data line D0 (*)
-RSW|Since i used small signal relay, it had two sides so another side is also connecting at the same time when relay makes connection but it only cus circuit. So practical use for this terminal can be to power magnetic lock with external source and even AC so that you get buzzing sound when the lock opens and avoid jamming of the lock. (*)|Wiegand data line D1. (*)
+**TERMINAL NAME**|**DESCRIPTION**
+:-----:|:-----:
+RPOW|In case RELAY-POWER pad is connected, when relay connects the circuit, this terminal provides input voltage directly on it’s poles. So the door magnet lock can be powered directly through this terminal.
+RSW|Since i used small signal relay, it had two sides so another side is also connecting at the same time when relay makes connection but it only cus circuit. So practical use for this terminal can be to power magnetic lock with external source and even AC so that you get buzzing sound when the lock opens and avoid jamming of the lock. (*)
+POWER 8V-12V|This is the main power source and in some settings only power source that you need. Please provide minimum 2A if you also power magnetic lock and Wiegand RFID Reader from same source, through ESP-RFID Relay Board
+DOORSTAT|This terminal was planned to accept door status magnet switch. It can be also repurposed since it’s just a “button” connected to GPIO16.
+BTN/IN|Depending on P1 and P2 Pads connection, it can have different purposes.Check P2/P3 pads description below.
 
 
 ## Configuration pads P1, P2, P3, RELAY-POWER, 5V/3V3
