@@ -74,8 +74,11 @@ For example, i thought that somebody would like to have remote doorbell but some
 <img src="https://raw.githubusercontent.com/esprfid/esp-rfid-relay-board/master/images/3waypad.png" width="" />&nbsp;&nbsp;
 
 Find out about it here:
-* https://hackaday.io/project/54277-3-way-pcb-pad
-* https://github.com/nardev/eagle3wayPCBpads
+
+https://hackaday.io/project/54277-3-way-pcb-pad
+
+https://github.com/nardev/eagle3wayPCBpads
+
 So, it’s similar to other pads which you just solder but this pad has unique shape so it can be soldered not in 2 but in 3 different ways. Just solder it in a way you want. (*) Check the table with description above.
 
 
