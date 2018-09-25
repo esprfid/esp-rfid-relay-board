@@ -35,10 +35,10 @@ The reason for 9 pins is to cover the most complex wiegand reader i could fins o
 
 **PIN NAME**|**CONNECTION**|**DESCRIPTION**
 :-----|:-----|:-----
-**DO**|GPIO4|Wiegand data line D0 (*)
-**D1**|GPIO5|Wiegand data line D1. (*)
+**DO**|GPIO4|Wiegand data line **D0** (*)
+**D1**|GPIO5|Wiegand data line **D1**. (*)
 **WG**|GPIO0|Some readers have WG line which if HIGH/LOW can change Wiegand stream bits. Usually not very important!
-**BUZ**|GPIO12|Almost always Wiegand RFID Readers have Buzzer line which can control piezo buzzer. Due to some inconsistency among readers, i was able to make it work only when i connect this line through 10K resistor and than control it with changing HIGH/LOW on that particular pin, depending what i want. IMPORTANT: P3 Pad on the back of board, can make that line to be connected directly to GPIO or through 10k resistor. Check P3 Pad explanation.
+**BUZ**|GPIO12|Almost always Wiegand RFID Readers have Buzzer line which can control piezo buzzer. Due to some inconsistency among readers, i was able to make it work only when i connect this line through 10K resistor and than control it with changing HIGH/LOW on that particular pin, depending what i want. IMPORTANT: **P3** Pad on the back of board, can make that line to be connected directly to GPIO or through 10k resistor. Check **P3** Pad explanation.
 **LED**|GPIO15|Most Wiegand readers have RED/GREEN status LEDs. Some color is default and if the line is changed HIGH/LOW than the other color appears.
 **GND**|GND|Planned for Wiegand RFID Reader GND.
 **VIN**|VIN|Connected directly to board’s POWER terminal’s positive pole. (*)
