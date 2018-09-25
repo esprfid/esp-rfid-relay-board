@@ -33,7 +33,7 @@ Same as for any other ESP8266 programmer where you need to put EPS8266 into a sp
 ## Reader 9 pin terminal
 The reason for 9 pins is to cover the most complex wiegand reader i could fins on the market. Mostly they only have 5 or 6 wires but sometimes, they also have 9 wire versions.
 
-**PIN-NAME**|**CONNECTION**|**DESCRIPTION**
+**PINNAME**|**CONNECTION**|**DESCRIPTION**
 :-----|:-----|:-----
 **DO**|GPIO4|Wiegand data line **D0** (*)
 **D1**|GPIO5|Wiegand data line **D1**. (*)
