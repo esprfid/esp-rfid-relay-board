@@ -62,7 +62,9 @@ BTN/IN|Depending on P1 and P2 Pads connection, it can have different purposes.Ch
 :-----|:-----
 **P1**|**Options:** Connected poles **3** and **2** redirects **F1** on **RFID Reader Terminal** to **BTN/IN** right pole. Connected poles 3 and 1 and you will get **GPIO14** to be connected on left **BTN/IN** terminal, grounded with 10k resistor. Connected poles **2** and **1** and you will power pin **F1** on **RFID Reader Terminal** with **GPIO14** (*)
 **P2**|**Options:** Connected poles **3** and **2** redirects **F2** on  RFID Reader Terminal to BTN/IN left pole. Connected poles 3 and 1 and you will get 3V3 on left pin of BTN/IN terminal. Connected poles **2** and **1** and you will power pin **F2** on **RFID Reader Terminal** with 3V3 (*)
-**P3**|**Options:** Connected poles **1** and **2** redirects **BUZ** pin on **RFID Reader Terminal** and **GPIO12**. Connected poles **2** and **3** redirects **BUZ** pin on **RFID Reader Terminal** and **GPIO12** through 10K resistor." "**RELAY- POWER**
+**P3**|**Options:** Connected poles **1** and **2** redirects **BUZ** pin on **RFID Reader Terminal** and **GPIO12**. Connected poles **2** and **3** redirects **BUZ** pin on **RFID Reader Terminal** and **GPIO12** through 10K resistor.
+**RELAY-POWER**| This pad is usually connected if you want to power **RPOW** Terminal from main power source as **ESP-RFID Relay Board**
+**5V/3V3**|Only purpose of this pad is to connect 5V or 3V3 line to **PROG’s** **POW** pin.
 
 ## Pads and what was the idea.
 The main idea was to be able to adjust this little board to your scenario and also not  to occupy few GPIO where there is possibility to use those in some other way.
