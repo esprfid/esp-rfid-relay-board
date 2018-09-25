@@ -73,24 +73,22 @@ For example, i thought that somebody would like to have remote doorbell but some
 
 <img src="https://raw.githubusercontent.com/esprfid/esp-rfid-relay-board/master/images/3waypad.png" width="" />&nbsp;&nbsp;
 
-Find out about it here:
-
-https://hackaday.io/project/54277-3-way-pcb-pad
-
-https://github.com/nardev/eagle3wayPCBpads
-
+Find out about it here:  
+https://hackaday.io/project/54277-3-way-pcb-pad  
+https://github.com/nardev/eagle3wayPCBpads  
 So, it’s similar to other pads which you just solder but this pad has unique shape so it can be soldered not in 2 but in 3 different ways. Just solder it in a way you want. (*) Check the table with description above.
 
 
 **P1 and P2** pads must be set in pair. Essentially you can get one of three different options.
 * I : You can redirect F1 and F2 on RFID Reader Terminal to BTN/IN terminal.
 * II: You can redirect input on F1 and F2 on RFID Reader Terminal to ESP8266’s GPIO14.
-* III: You can redirect BTN/IN terminal to ESP8266’s GPIO14 as button input.
+* III: You can redirect BTN/IN terminal to ESP8266’s GPIO14 as button input.  
 
-**P3** has bit strange purpose. I noticed that most popular wiegand readers have BUZZER line which i couldn’t control directly by simply HIGH/LOW on digital pins of ESP8266 and i also couldn’t  find any docs what signal is required, but i found a way for most of readers, it’s simply to put 10K resistor on the line. But, since it varies i also left an option to hook it directly to GPIO12
+**P3** has bit strange purpose. I noticed that most popular wiegand readers have BUZZER line which i couldn’t control directly by simply HIGH/LOW on digital pins of ESP8266 and i also couldn’t  find any docs what signal is required, but i found a way for most of readers, it’s simply to put 10K resistor on the line. But, since it varies i also left an option to hook it directly to GPIO12  
 
-**RELAY-POWER** is just connecting positive line to RPOW terminal. Usually, if you power the lock from the ESP-RFID Relay Board, that pad will be connected and you will use RPOW terminal to hook the lock.
-5V/3V3 pad can be handy if you are powering ESP12F module through programmer itself while programming.
+**RELAY-POWER** is just connecting positive line to RPOW terminal. Usually, if you power the lock from the ESP-RFID Relay Board, that pad will be connected and you will use RPOW terminal to hook the lock.  
+
+**5V/3V3** pad can be handy if you are powering ESP12F module through programmer itself while programming.  
 
 ## Relay
 The relay used on this board is HFD4/5, DPST signal relay and it’s controlled through **GPIO13** on ESP8266.
