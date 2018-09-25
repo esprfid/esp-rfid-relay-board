@@ -79,10 +79,10 @@ https://github.com/nardev/eagle3wayPCBpads
 So, it’s similar to other pads which you just solder but this pad has unique shape so it can be soldered not in 2 but in 3 different ways. Just solder it in a way you want. (*) Check the table with description above.
 
 
-**P1 and P2** pads must be set in pair. Essentially you can get one of three different options.
-* I : You can redirect F1 and F2 on RFID Reader Terminal to BTN/IN terminal.
-* II: You can redirect input on F1 and F2 on RFID Reader Terminal to ESP8266’s GPIO14.
-* III: You can redirect BTN/IN terminal to ESP8266’s GPIO14 as button input.  
+**P1 and P2** pads must be set in pair. Essentially you can get one of three different options.  
+**I** : You can redirect F1 and F2 on RFID Reader Terminal to BTN/IN terminal.  
+**II**: You can redirect input on F1 and F2 on RFID Reader Terminal to ESP8266’s GPIO14.  
+**III**: You can redirect BTN/IN terminal to ESP8266’s GPIO14 as button input.  
 
 **P3** has bit strange purpose. I noticed that most popular wiegand readers have BUZZER line which i couldn’t control directly by simply HIGH/LOW on digital pins of ESP8266 and i also couldn’t  find any docs what signal is required, but i found a way for most of readers, it’s simply to put 10K resistor on the line. But, since it varies i also left an option to hook it directly to GPIO12  
 
