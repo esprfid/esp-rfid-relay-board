@@ -99,6 +99,6 @@ The relay used on this board is HFD4/5, DPST signal relay and it’s controlled 
 
 
 ### You can get this board from my Tindie shop:
-<a href="https://www.tindie.com/products/nardev/esp-rfid-relay-board-12v-in-esp8266-board/">
+<a href="https://www.tindie.com/products/edit/esp-rfid-relay-board-12v-for-esp8266-board/">
 <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104">
 </a>
