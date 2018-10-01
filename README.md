@@ -103,13 +103,10 @@ In order to program the board, you would need **"USB-TTL​"** or similar compat
 
 Considering that you already installed required drivers for your OS and that you have programming software already set, follow procedure:
 1. Connect your **USB-TTL​** programmer to P ROG​ terminal. (Don’t forget to cross lines, RX to TX and vice versa)
-2. Press FLASH​ and RESET​ buttons together.
-3. Release RESET​ Button and keep F LASH​ Button pressed for 1-2 sec and than release it too.
-4. Now, your ESP8266​ should be in ​ FLASH​ mode and you can upload you program.
-(*) I noticed that it it doesn’t make any problems if you keep F
-LASH​ Button pressed and
-sometimes E
-SP8266​ won’t start with ​ FLASH​ mode in any other way.
+2. Press **FLASH​** and **RESET​** buttons together.
+3. Release **RESET​** Button and keep **FLASH​** Button pressed for 1-2 sec and than release it too.
+4. Now, your ESP8266​ should be in **FLASH​** mode and you can upload you program.
+(*) I noticed that it it doesn’t make any problems if you keep **FLASH​** Button pressed and sometimes **ESP8266​** won’t start with ​**FLASH​** mode in any other way.
 
 
 ## KNOWN ISSUES
