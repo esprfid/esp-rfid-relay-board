@@ -93,6 +93,35 @@ So, it’s similar to other pads which you just solder but this pad has unique s
 ## Relay
 The relay used on this board is HFD4/5, DPST signal relay and it’s controlled through **GPIO13** on ESP8266.
 
+## PROGRAMMING
+#### Programming procedures and options.
+
+**ESP-RFID relay Board**​ is essentially dev board extension for **ESP12​** modules. As that, it has **RESET​** and **FLASH​** buttons and the rest of circuit required to put ESP8266 in programming mode.
+In order to program the board, you would need **"USB-TTL​"** or similar compatible programmer. (I personally like this 1$ one ​[here​](https://www.electrodragon.com/product/usb-ttl-serial-ch340-board/))
+
+**Programming Procedure**
+
+Considering that you already installed required drivers for your OS and that you have programming software already set, follow procedure:
+1. Connect your **USB-TTL​** programmer to P ROG​ terminal. (Don’t forget to cross lines, RX to TX and vice versa)
+2. Press FLASH​ and RESET​ buttons together.
+3. Release RESET​ Button and keep F LASH​ Button pressed for 1-2 sec and than release it too.
+4. Now, your ESP8266​ should be in ​ FLASH​ mode and you can upload you program.
+(*) I noticed that it it doesn’t make any problems if you keep F
+LASH​ Button pressed and
+sometimes E
+SP8266​ won’t start with ​ FLASH​ mode in any other way.
+
+
+## KNOWN ISSUES
+* Silkscreen mistake WG/LED pins should be switched. (To test with base
+firmware and setting pins to down/up and to check if that is the case only with
+ESP-RFID​ firmware)
+
+* Sometimes, connected ringing button through board, VAC source and to bell,
+causes buck converter to jamm. It could be due to poor wire quality or something
+else. But usually if it doesn’t occur immediately on first try, it never appears later.
+
+
 ## Short video walk-through
 
 [![ESP8266 RFID Wiegand ESP12 Nodemcu](https://img.youtube.com/vi/rXRt-YkzXZU/0.jpg)](https://youtu.be/rXRt-YkzXZU)
